@@ -1,0 +1,5 @@
+E:\Out Project\DBFrame\DBFrame\bin\Debug\DBFrame.dll
+E:\Out Project\DBFrame\DBFrame\bin\Debug\DBFrame.pdb
+E:\Out Project\DBFrame\DBFrame\obj\Debug\DBFrame.dll
+E:\Out Project\DBFrame\DBFrame\obj\Debug\DBFrame.pdb
+E:\Out Project\DBFrame\DBFrame\obj\Debug\DBFrame.csprojResolveAssemblyReference.cache

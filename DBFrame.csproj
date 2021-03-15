@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D21B6190-3CEA-4AA0-AD09-3CCE69D25C32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBFrame</RootNamespace>
+    <AssemblyName>DBFrame</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\BaseCache.cs" />
+    <Compile Include="Cache\CacheHelper.cs" />
+    <Compile Include="Cache\DotNetCache.cs" />
+    <Compile Include="DBMapAttr\DBColumnAttribute.cs" />
+    <Compile Include="DBMapAttr\DBPrimaryKeyAttribute.cs" />
+    <Compile Include="DBMapAttr\DBTableAttribute.cs" />
+    <Compile Include="DBMap\DBColumn.cs" />
+    <Compile Include="DBMap\DBPrimaryKey.cs" />
+    <Compile Include="DBMap\DBTable.cs" />
+    <Compile Include="DBMap\MapHelper.cs" />
+    <Compile Include="DBSession.cs" />
+    <Compile Include="DBSession\DBSession.AdoNET.cs" />
+    <Compile Include="DBSession\DBSession.Helper.cs" />
+    <Compile Include="DBSession\DBSession.NonQuery.cs" />
+    <Compile Include="DBSession\DBSession.Reader.cs" />
+    <Compile Include="FullData\DegFullData.cs" />
+    <Compile Include="FullData\FullDataHelper.cs" />
+    <Compile Include="FullData\FullDataReader.cs" />
+    <Compile Include="FullData\ObjectHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\MySQL.cs" />
+    <Compile Include="Provider\Oracle.cs" />
+    <Compile Include="Provider\SQLite.cs" />
+    <Compile Include="Provider\SQLServer.cs" />
+    <Compile Include="Utils\DBContext.cs" />
+    <Compile Include="Utils\EnumType.cs" />
+    <Compile Include="Utils\MyDBException.cs" />
+    <Compile Include="Utils\MyIdMake.cs" />
+    <Compile Include="Utils\TableInitCheck.cs" />
+    <Compile Include="Utils\TableSeparate.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
